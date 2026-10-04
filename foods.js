@@ -63,6 +63,7 @@ const INGREDIENTS = {
   peas:        { name: "Green peas",        v: [81,5.4,14.5,0.4,5.7, 25,1.5,1.2,33,244,5, 38,40,65,0] },
   sarson:      { name: "Mustard greens",    v: [27,2.9,4.7,0.4,3.2, 115,1.6,0.25,32,384,20, 151,70,12,0] },
   spinach:     { name: "Spinach (palak)",   v: [23,2.9,3.6,0.4,2.2, 99,2.7,0.5,79,558,79, 469,28,194,0] },
+  methi:       { name: "Methi leaves",      v: [49,4.4,6,0.9,4.9, 395,1.9,0.5,67,300,76, 190,52,57,0] },
   okra:        { name: "Bhindi",            v: [33,1.9,7.5,0.2,3.2, 82,0.6,0.6,57,299,7, 36,23,60,0] },
   carrot:      { name: "Carrot",            v: [41,0.9,9.6,0.2,2.8, 33,0.3,0.24,12,320,69, 835,5.9,19,0] },
 
@@ -163,6 +164,9 @@ const DISHES = [
     presets: { Home: ["Medium", "Light"], Dhaba: ["Large", "Heavy + makhan"] } },
   { id: "paneer_paratha", name: "Paneer paratha", cat: "Breads", unit: "paratha",
     base: { atta: 50, paneer: 40, onion: 5, salt: 1 }, sizes: ROTI_SIZES, extra: GHEE(4, 8, 15, 10),
+    presets: { Home: ["Medium", "Light"], Dhaba: ["Large", "Heavy + makhan"] } },
+  { id: "methi_paratha", name: "Methi paratha", cat: "Breads", unit: "paratha",
+    base: { atta: 50, methi: 25, salt: 0.8 }, sizes: ROTI_SIZES, extra: GHEE(4, 8, 15, 10),
     presets: { Home: ["Medium", "Light"], Dhaba: ["Large", "Heavy + makhan"] } },
   { id: "missi_roti", name: "Missi roti", cat: "Breads", unit: "roti",
     base: { atta: 25, besan: 25, onion: 5, salt: 0.8 }, sizes: ROTI_SIZES, extra: GHEE(3, 6, 10),
