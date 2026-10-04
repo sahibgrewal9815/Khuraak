@@ -1,5 +1,5 @@
 // Bump this version whenever you change any file, so phones get the update.
-const CACHE = "khurak-v1";
+const CACHE = "khurak-v2";
 const FILES = ["./", "index.html", "app.js", "foods.js", "manifest.json", "icons/icon-192.png", "icons/icon-512.png"];
 
 self.addEventListener("install", e => {
